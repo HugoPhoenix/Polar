@@ -1,0 +1,3 @@
+usr/local/bin/polard usr/bin
+usr/local/bin/polar-cli usr/bin
+debian/examples/polar.conf etc/polar

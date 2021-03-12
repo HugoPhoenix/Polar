@@ -1,0 +1,8 @@
+/usr/bin/polar-cli		--	gen_context(system_u:object_r:polar_exec_t,s0)
+/usr/sbin/polard		--	gen_context(system_u:object_r:polar_exec_t,s0)
+/usr/lib(64)?/polar/polard		--	gen_context(system_u:object_r:polar_exec_t,s0)
+
+/etc/polar(/.*)?		gen_context(system_u:object_r:polar_conf_t,s0)
+/var/lib/polar(/.*)?		gen_context(system_u:object_r:polar_var_lib_t,s0)
+
+(/var)?/run/polard(/.*)?   gen_context(system_u:object_r:polar_var_run_t,s0)

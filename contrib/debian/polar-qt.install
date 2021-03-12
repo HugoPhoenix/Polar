@@ -1,0 +1,6 @@
+usr/local/bin/polar-qt usr/bin
+share/pixmaps/polar32.xpm usr/share/pixmaps
+share/pixmaps/polar16.xpm usr/share/pixmaps
+share/pixmaps/polar128.png usr/share/pixmaps
+debian/polar-qt.desktop usr/share/applications
+debian/polar-qt.protocol usr/share/kde4/services/

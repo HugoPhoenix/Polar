@@ -1,0 +1,13 @@
+[Desktop Entry]
+Version=1.0
+Name=Polar Core
+Comment=Polar P2P Cryptocurrency
+Comment[fr]=Polar, monnaie virtuelle cryptographique pair à pair
+Comment[tr]=Polar, eşten eşe kriptografik sanal para birimi
+Exec=polar-qt %u
+Terminal=false
+Type=Application
+Icon=polar128
+MimeType=x-scheme-handler/polar;
+Categories=Office;Finance;
+StartupWMClass=Polar-qt
