@@ -51,9 +51,13 @@ static void convertSeed6(std::vector<CAddress>& vSeedsOut, const SeedSpec6* data
 //   (no blocks before with a timestamp after, none after with
 //    timestamp before)
 // + Contains no strange transactions
-static Checkpoints::MapCheckpoints mapCheckpoints =
-    boost::assign::map_list_of
-    (0, uint256("000008eb30d07018d5f4d346d9926e7021704a0d8da6bb186a8b101f83f3f16b"));
+static Checkpoints::MapCheckpoints mapCheckpoints = {
+    {0, uint256("000008eb30d07018d5f4d346d9926e7021704a0d8da6bb186a8b101f83f3f16b")},
+    {5000, uint256("0000000019bfd19b894ae7908ce76898ed08ae20918e5f95374c976df539c2c8")},
+    {10000, uint256("000000012807490728addaba5870bd3fe3d927d0988191f1472d49bc31611a1e")},
+    {15000, uint256("000000000235e47f6039d8a574e99de1cb3d9f296d4092513b7a258c91fe4192")},
+    {20000, uint256("00000000ec94176535a950b54425bf51812a29764793586fd18f4f723645a820")},
+    };
 static const Checkpoints::CCheckpointData data = {
     &mapCheckpoints,
     1615554015, // * UNIX timestamp of last checkpoint block
@@ -122,8 +126,8 @@ public:
         nRejectBlockOutdatedMajority = 0;
         nToCheckBlockUpgradeMajority = 0;
         nMinerThreads = 0;
-        nTargetTimespan = 1 * 60;
-        nTargetSpacing = 1 * 60;
+        nTargetTimespan = 1 * 45;
+        nTargetSpacing = 1 * 45;
         nMaturity = 10;
         nMasternodeCountDrift = 20;
         nMaxMoneyOut = 9999999999 * COIN;
@@ -180,8 +184,11 @@ public:
         assert(hashGenesisBlock == uint256("0x000008eb30d07018d5f4d346d9926e7021704a0d8da6bb186a8b101f83f3f16b"));
         assert(genesis.hashMerkleRoot == uint256("0xe3ed86d520372ced4a631aa043a209a140a0d81cabaa374d50311ad432c26a1d"));
 
-        vSeeds.push_back(CDNSSeedData("minecraftcoin.online", "node1.minecraftcoin.online"));
-        vSeeds.push_back(CDNSSeedData("n2.minecraftcoin.online", "node2.minecraftcoin.online"));
+        vSeeds.push_back(CDNSSeedData("hugophoenix.com", "node1.hugophoenix.com"));
+        vSeeds.push_back(CDNSSeedData("n2.hugophoenix.com", "node2.hugophoenix.com"));
+        vSeeds.push_back(CDNSSeedData("n3.hugophoenix.com", "node3.hugophoenix.com"));
+        vSeeds.push_back(CDNSSeedData("n4.hugophoenix.com", "node4.hugophoenix.com"));
+        vSeeds.push_back(CDNSSeedData("n5.hugophoenix.com", "node5.hugophoenix.com"));
 
         base58Prefixes[PUBKEY_ADDRESS] = std::vector<unsigned char>(1, 55);
         base58Prefixes[SCRIPT_ADDRESS] = std::vector<unsigned char>(1, 56);
