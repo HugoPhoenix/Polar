@@ -57,6 +57,7 @@ static Checkpoints::MapCheckpoints mapCheckpoints = {
     {10000, uint256("000000012807490728addaba5870bd3fe3d927d0988191f1472d49bc31611a1e")},
     {15000, uint256("000000000235e47f6039d8a574e99de1cb3d9f296d4092513b7a258c91fe4192")},
     {20000, uint256("00000000ec94176535a950b54425bf51812a29764793586fd18f4f723645a820")},
+    {25000, uint256("000000005bcb92b43bf576073b763c2eb05319fc14444a6680358a42e5520f02")},
     };
 static const Checkpoints::CCheckpointData data = {
     &mapCheckpoints,
@@ -120,7 +121,7 @@ public:
         vAlertPubKey = ParseHex("042cb5e0fc05ddfe9033a63115aa245b82df9b63e3fd9fe0880f032d8f17ab354f8e0e623955f321ef06d50c78a0c35b1b12b6dd1ee5b8719db95f6473944acc0e");
         nDefaultPort = 31046;
         bnProofOfWorkLimit = ~uint256(0) >> 20; // Polar starting difficulty is 1 / 2^12
-        nSubsidyHalvingInterval = 210000;
+        nSubsidyHalvingInterval = 1000000;
         nMaxReorganizationDepth = 100;
         nEnforceBlockUpgradeMajority = 0;
         nRejectBlockOutdatedMajority = 0;
