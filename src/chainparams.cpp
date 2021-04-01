@@ -121,7 +121,7 @@ public:
         vAlertPubKey = ParseHex("042cb5e0fc05ddfe9033a63115aa245b82df9b63e3fd9fe0880f032d8f17ab354f8e0e623955f321ef06d50c78a0c35b1b12b6dd1ee5b8719db95f6473944acc0e");
         nDefaultPort = 31046;
         bnProofOfWorkLimit = ~uint256(0) >> 20; // Polar starting difficulty is 1 / 2^12
-        nSubsidyHalvingInterval = 1000000;
+        nSubsidyHalvingInterval = 1250000;
         nMaxReorganizationDepth = 100;
         nEnforceBlockUpgradeMajority = 0;
         nRejectBlockOutdatedMajority = 0;
