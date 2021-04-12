@@ -1949,7 +1949,7 @@ bool AppInit2()
        1PA+1000 == (.1PA+100)*10
        10PA+10000 == (1PA+1000)*10
     */
-    obfuScationDenominations.push_back((17500 * COIN) + 10000000);
+    obfuScationDenominations.push_back((25000 * COIN) + 10000000);
     obfuScationDenominations.push_back((1000 * COIN) + 1000000);
     obfuScationDenominations.push_back((100 * COIN) + 100000);
     obfuScationDenominations.push_back((10 * COIN) + 10000);
