@@ -129,14 +129,14 @@ public:
         nRejectBlockOutdatedMajority = 0;
         nToCheckBlockUpgradeMajority = 0;
         nMinerThreads = 0;
-        nTargetTimespan = 1 * 45;
-        nTargetSpacing = 1 * 45;
+        nTargetTimespan = 1 * 30;
+        nTargetSpacing = 1 * 30;
         nMaturity = 10;
         nMasternodeCountDrift = 20;
         nMaxMoneyOut = 9999999999 * COIN;
 
         /** Height or Time Based Activations **/
-        nLastPOWBlock = 5000000;
+        nLastPOWBlock = 2000000;
         nModifierUpdateBlock = 0;
         nZerocoinStartHeight = 0;
         nZerocoinStartTime = 1615554015;
@@ -266,8 +266,8 @@ public:
         nRejectBlockOutdatedMajority = 0;
         nToCheckBlockUpgradeMajority = 0;
         nMinerThreads = 0;
-        nTargetTimespan = 1 * 60;
-        nTargetSpacing = 1 * 60;
+        nTargetTimespan = 1 * 30;
+        nTargetSpacing = 1 * 30;
         nLastPOWBlock = 200;
         nMaturity = 15;
         nMasternodeCountDrift = 4;
@@ -360,7 +360,7 @@ public:
         nToCheckBlockUpgradeMajority = 0;
         nMinerThreads = 1;
         nTargetTimespan = 24 * 60 * 60; // Polar: 1 day
-        nTargetSpacing = 1 * 60;        // Polar: 1 minutes
+        nTargetSpacing = 1 * 30;        // Polar: 0.5 minutes
         bnProofOfWorkLimit = ~uint256(0) >> 1;
         nLastPOWBlock = 250;
         nMaturity = 10;
